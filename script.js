@@ -1,3 +1,26 @@
+// Seleccionar todos los elementos con la clase "enlace-principal"
+const enlacesPrincipales = document.querySelectorAll('.enlace-principal');
+
+// Agregar un evento de clic a cada enlace principal
+enlacesPrincipales.forEach(enlace => {
+    enlace.addEventListener('click', function(event) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado de los enlaces
+        Swal.fire({
+            title: '!Espera crack!',
+            text: 'Usamos publicidad para mantener el canal, por favor desactiva tu bloqueador de anuncios. Espero lo puedas entender :(',
+            icon: 'info',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'OK'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = this.href; // Redirigir al enlace
+            }
+        });
+    });
+});
+
 // Función para activar la vibración del dispositivo
 function vibrarDispositivo() {
     if ("vibrate" in navigator) {
