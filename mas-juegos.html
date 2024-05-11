@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+    <link rel="icon" href="img/Ico.png">
+    <title>Cheatinex.com</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Cheatinex</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html" onclick="seleccionar()">REGRESAR</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">CONTENIDO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>¿Más juegos?</h2>
+            <p class="bienvenida">Si buscas <span>Más juegos</span>
+            pues crack, aquí tienes mas juegos con todas las ventajas,
+            todo desbloqueado o dinero infinito para que pases horas 
+            de diversión.
+            </p>
+        </div>
+    </section>
+    
+
+    <!-- SECCION INICIO -->
+    
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Gunship.jpg" alt="Gunship Battle Hack">
+            </div>
+            <h1>Nombre juego</h1>
+            <h2>¡El único hack legal que existe!</h2>
+            <div class="redes">
+                <a href="https://sub4unlock.io/oFBa3" target="_blank"><i class="fa-solid fa-download"></i></a>
+                <a href="https://youtube.com/@Cheatinex?si=jNYP78RCzIRWIrF7" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://t.me/Cheatinexx" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://discord.com/invite/zDMpCTQEfK" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form id="formulario-contacto"  method="POST">
+                    <div class="col">
+                        <input type="text" placeholder="Tú Nombre" name="Nombre">
+                        <input type="tel" placeholder="Número telefónico" name="Teléfono">
+                        <input type="email" placeholder="Dirección de correo" name="Correo">
+                        <input type="text" placeholder="Tema" name="Tema">
+                        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button type="submit">Enviar<i class="fa-solid fa-paper-plane" style="margin-left: 5px;"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#sobremi" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+                <a href="https://youtube.com/@Cheatinex?si=jNYP78RCzIRWIrF7" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://t.me/Cheatinexx" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://discord.com/invite/zDMpCTQEfK" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="sendMail.js"></script>
+    <script src="sweetalert2@11.js"></script>
+</body>
+</html>
