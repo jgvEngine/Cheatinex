@@ -98,6 +98,12 @@ text-align: justify;
     font-size: 15px;
     font-weight: normal;
 }
+.inicio .contenido-banner h3{
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: normal;
+    color: #00CCFF;
+}
 .inicio .contenido-banner .redes a{
     color: #fff;
     display: inline-block;
@@ -118,14 +124,14 @@ text-align: justify;
 .sobremi{
     background-color: black;
     color: #fff;
-    padding: 100px 20px;
+    padding: 70px 20px;
 }
 .sobremi .contenido-seccion{
     max-width: 1100px;
     margin: auto;
 }
 .sobremi h2{
-    font-size: 48px;
+    font-size: 38px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
@@ -140,7 +146,18 @@ text-align: justify;
     color: #00CCFF;
     font-weight: bold;
 }
+/*Div de cobtenido principal*/
+.contenido-prin{
+    background-color: black;
+    color: #fff;
+}
+.contenido-prin h2{
+    font-size: 38px;
+    font-family: 'Righteous';
+    text-align: center;
+    /*padding: 20px 0;*/
 
+}
 
 /* SECCION CONTACTO */
 .contacto{
